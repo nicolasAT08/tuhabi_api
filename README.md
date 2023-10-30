@@ -18,3 +18,5 @@ Based on business requirements, the final variables are given (Address, City, St
 #### Assumptions
 - Users with "is_superuser = 1" are allowed to look up the property table and don't need any other validation.
 - Users with "is_staf = 0" and "is_active = 1" are allowed to look up the property table. This define an external user, which is not a employee but is active.
+#### "Like propery" requirement
+A new table called "user_like" will contain the "property_id" and the "user_id" (FKs) to store properties likes.
