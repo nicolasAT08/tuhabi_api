@@ -17,4 +17,4 @@ The user ("username" and "password") must exist in the DB to look up the propert
 Based on business requirements, the final variables are given (Address, City, Status, Price, Description). In the same way, it was required that the user can pass as parameters one or more cities and years to filter the data.
 #### Assumptions
 - Users with "is_superuser = 1" are allowed to look up the property table and don't need any other validation.
-- Users with "is_staf = 1" and "is_active = 1" are allowed to look up the property table.
+- Users with "is_staf = 0" and "is_active = 1" are allowed to look up the property table. This define an external user, which is not a employee but is active.
