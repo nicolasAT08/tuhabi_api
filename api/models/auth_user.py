@@ -5,7 +5,7 @@ def login(cur, user, pwd):
             SELECT * FROM {auth_table} au
             WHERE au.username = '{user}'
             AND au.password = '{pwd}'
-            AND au.is_staff = 1
+            AND au.is_staff = 0
             AND au.is_active = 1
             OR au.is_superuser = 1;
             """
